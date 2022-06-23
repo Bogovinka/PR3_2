@@ -1,0 +1,294 @@
+﻿<Window x:Class="PR3_2.Test"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PR3_2"
+        mc:Ignorable="d"
+        Title="Тест"  WindowStartupLocation="CenterScreen" MinHeight="450" MinWidth="800" Height="450" Width="800">
+    <StackPanel Background="#FF9CD499">
+        <Label HorizontalAlignment="Center" FontSize="24">Защита информации</Label>
+        <TabControl x:Name="tB">
+            <TabItem Header="1">
+                <StackPanel Background="White">
+                    <StackPanel Margin="20,0,20,0" Background="White">
+                        <Label FontSize="14" Height="100">Какой вид идентификации и аутентификации получил наибольшее распространение</Label>
+                    </StackPanel>
+                    <StackPanel Margin="20,20,20,0" Background="White">
+                        <RadioButton FontSize="14" GroupName="v1" Margin="0,10,0,0">Одноразовые пароли</RadioButton>
+                        <RadioButton x:Name="v1" FontSize="14" GroupName="v1" Margin="0,20,0,0">Потсянные пароли</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v1" Margin="0,20,0,0">Английские пароли</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v1" Margin="0,20,0,10">Русские пароли</RadioButton>
+                    </StackPanel>
+                    <Button Click="next_ButtonClick" Margin="0,10,0,0" HorizontalAlignment="Center" FontSize="24">Ответить</Button>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="2">
+                <StackPanel Background="#FFB6B6B6">
+                    <StackPanel Margin="20,0,20,0" Background="White">
+                        <Label FontSize="14" Height="100">Под какие системы распространение вирусов происходит наиболее динамично</Label>
+                    </StackPanel>
+                    <StackPanel Margin="20,20,20,0" Background="White">
+                        <RadioButton FontSize="14" GroupName="v2" Margin="0,10,0,0">IOS</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v2" Margin="0,20,0,0">Windows</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v2" Margin="0,20,0,0">MAC OS</RadioButton>
+                        <RadioButton x:Name="v2" FontSize="14" GroupName="v2" Margin="0,20,0,10">Android</RadioButton>
+                    </StackPanel>
+                    <Button Click="next_ButtonClick" Margin="0,10,0,0" HorizontalAlignment="Center" FontSize="24">Ответить</Button>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="3">
+                <StackPanel Background="#FFB6B6B6">
+                    <StackPanel Margin="20,0,20,0" Background="White">
+                        <Label FontSize="14" Height="100">Заключительным этапом построения системы защиты является</Label>
+                    </StackPanel>
+                    <StackPanel Margin="20,20,20,0" Background="White">
+                        <RadioButton x:Name="v3" FontSize="14" GroupName="v3" Margin="0,10,0,0">Сопровождение</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v3" Margin="0,20,0,0">Кодирование</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v3" Margin="0,20,0,0">Создание</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v3" Margin="0,20,0,10">Заключение</RadioButton>
+                    </StackPanel>
+                    <Button Click="next_ButtonClick" Margin="0,10,0,0" HorizontalAlignment="Center" FontSize="24">Ответить</Button>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="4">
+                <StackPanel Background="#FFB6B6B6">
+                    <StackPanel Margin="20,0,20,0" Background="White">
+                        <Label FontSize="14" Height="100">Какие угрозы безопасности информации являются преднамеренными</Label>
+                    </StackPanel>
+                    <StackPanel Margin="20,20,20,0" Background="White">
+                        <RadioButton FontSize="14" GroupName="v4" Margin="0,10,0,0">Утечка данных</RadioButton>
+                        <RadioButton x:Name="v4" FontSize="14" GroupName="v4" Margin="0,20,0,0">Не авторизированный доступ</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v4" Margin="0,20,0,0">Открытй исходный код</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v4" Margin="0,20,0,10">Закрытй код</RadioButton>
+                    </StackPanel>
+                    <Button Click="next_ButtonClick" Margin="0,10,0,0" HorizontalAlignment="Center" FontSize="24">Ответить</Button>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="5">
+                <StackPanel Background="#FFB6B6B6">
+                    <StackPanel Margin="20,0,20,0" Background="White">
+                        <Label FontSize="14" Height="100">Какой подход к обеспечению безопасности имеет место</Label>
+                    </StackPanel>
+                    <StackPanel Margin="20,20,20,0" Background="White">
+                        <RadioButton FontSize="14" GroupName="v5" Margin="0,10,0,0">Логический</RadioButton>
+                        <RadioButton x:Name="v5" FontSize="14" GroupName="v5" Margin="0,20,0,0">Комплексный</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v5" Margin="0,20,0,0">Большой</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v5" Margin="0,20,0,10">Математический</RadioButton>
+                    </StackPanel>
+                    <Button Click="next_ButtonClick" Margin="0,10,0,0" HorizontalAlignment="Center" FontSize="24">Ответить</Button>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="6">
+                <StackPanel Background="#FFB6B6B6">
+                    <StackPanel Margin="20,0,20,0" Background="White">
+                        <Label FontSize="14" Height="100">Системой криптографической защиты информации является</Label>
+                    </StackPanel>
+                    <StackPanel Margin="20,20,20,0" Background="White">
+                        <RadioButton x:Name="v6" FontSize="14" GroupName="v6" Margin="0,10,0,0">Крипто про</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v6" Margin="0,20,0,0">Касперский</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v6" Margin="0,20,0,0">Аваст</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v6" Margin="0,20,0,10">Опера</RadioButton>
+                    </StackPanel>
+                    <Button Click="next_ButtonClick" Margin="0,10,0,0" HorizontalAlignment="Center" FontSize="24">Ответить</Button>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="7">
+                <StackPanel Background="#FFB6B6B6">
+                    <StackPanel Margin="20,0,20,0" Background="White">
+                        <Label FontSize="14" Height="100">Какие вирусы активизируются в самом начале работы с операционной системой</Label>
+                    </StackPanel>
+                    <StackPanel Margin="20,20,20,0" Background="White">
+                        <RadioButton FontSize="14" GroupName="v7" Margin="0,10,0,0">Бомбы</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v7" Margin="0,20,0,0">Трояны</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v7" Margin="0,20,0,0">Черви</RadioButton>
+                        <RadioButton x:Name="v7" FontSize="14" GroupName="v7" Margin="0,20,0,10">Загрузочные</RadioButton>
+                    </StackPanel>
+                    <Button Click="next_ButtonClick" Margin="0,10,0,0" HorizontalAlignment="Center" FontSize="24">Ответить</Button>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="8">
+                <StackPanel Background="#FFB6B6B6">
+                    <StackPanel Margin="20,0,20,0" Background="White">
+                        <Label FontSize="14" Height="100">Кто является основным ответственным за определение уровня классификации информации</Label>
+                    </StackPanel>
+                    <StackPanel Margin="20,20,20,0" Background="White">
+                        <RadioButton FontSize="14" GroupName="v8" Margin="0,10,0,0">Рабочий</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v8" Margin="0,20,0,0">Программист</RadioButton>
+                        <RadioButton x:Name="v8" FontSize="14" GroupName="v8" Margin="0,20,0,0">Владелец</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v8" Margin="0,20,0,10">Человек</RadioButton>
+                    </StackPanel>
+                    <Button Click="next_ButtonClick" Margin="0,10,0,0" HorizontalAlignment="Center" FontSize="24">Ответить</Button>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="9">
+                <StackPanel Background="#FFB6B6B6">
+                    <StackPanel Margin="20,0,20,0" Background="White">
+                        <Label FontSize="14" Height="100">Кто в конечном счете несет ответственность за гарантии того, что данные классифицированы и защищены</Label>
+                    </StackPanel>
+                    <StackPanel Margin="20,20,20,0" Background="White">
+                        <RadioButton x:Name="v9" FontSize="14" GroupName="v9" Margin="0,10,0,0">Руководство</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v9" Margin="0,20,0,0">Работник</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v9" Margin="0,20,0,0">Создатель</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v9" Margin="0,20,0,10">Программист</RadioButton>
+                    </StackPanel>
+                    <Button Click="next_ButtonClick" Margin="0,10,0,0" HorizontalAlignment="Center" FontSize="24">Ответить</Button>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="10">
+                <StackPanel Background="#FFB6B6B6">
+                    <StackPanel Margin="20,0,20,0" Background="White">
+                        <Label FontSize="14" Height="100">Свойства информации, наиболее актуальные при обеспечении информационной безопасности</Label>
+                    </StackPanel>
+                    <StackPanel Margin="20,20,20,0" Background="White">
+                        <RadioButton FontSize="14" GroupName="v10" Margin="0,10,0,0">Плотность</RadioButton>
+                        <RadioButton x:Name="v10" FontSize="14" GroupName="v10" Margin="0,20,0,0">Целостность</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v10" Margin="0,20,0,0">Массовость</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v10" Margin="0,20,0,10">Понятность</RadioButton>
+                    </StackPanel>
+                    <Button Click="next_ButtonClick" Margin="0,10,0,0" HorizontalAlignment="Center" FontSize="24">Ответить</Button>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="11">
+                <StackPanel Background="#FFB6B6B6">
+                    <StackPanel Margin="20,0,20,0" Background="White">
+                        <Label FontSize="14" Height="100">Название информации, которую следует защищать (по нормативам, правилам сети, системы)</Label>
+                    </StackPanel>
+                    <StackPanel Margin="20,20,20,0" Background="White">
+                        <RadioButton FontSize="14" GroupName="v11" Margin="0,10,0,0">Защитная</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v11" Margin="0,20,0,0">Открытой</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v11" Margin="0,20,0,0">Закрытой</RadioButton>
+                        <RadioButton x:Name="v11" FontSize="14" GroupName="v11" Margin="0,20,0,10">Защищаемой</RadioButton>
+                    </StackPanel>
+                    <Button Click="next_ButtonClick" Margin="0,10,0,0" HorizontalAlignment="Center" FontSize="24">Ответить</Button>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="12">
+                <StackPanel Background="#FFB6B6B6">
+                    <StackPanel Margin="20,0,20,0" Background="White">
+                        <Label FontSize="14" Height="100">По активности реагирования СЗИ системы делят на</Label>
+                    </StackPanel>
+                    <StackPanel Margin="20,20,20,0" Background="White">
+                        <RadioButton FontSize="14" GroupName="v12" Margin="0,10,0,0">Активируемая и пассивные</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v12" Margin="0,20,0,0">Блочная и не блочная</RadioButton>
+                        <RadioButton x:Name="v12" FontSize="14" GroupName="v12" Margin="0,20,0,0">Активные пассивные</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v12" Margin="0,20,0,10">Открытая и закрытая</RadioButton>
+                    </StackPanel>
+                    <Button Click="next_ButtonClick" Margin="0,10,0,0" HorizontalAlignment="Center" FontSize="24">Ответить</Button>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="13">
+                <StackPanel Background="#FFB6B6B6">
+                    <StackPanel Margin="20,0,20,0" Background="White">
+                        <Label FontSize="14" Height="100">Выберите, к какому виду угроз относится присвоение чужого права</Label>
+                    </StackPanel>
+                    <StackPanel Margin="20,20,20,0" Background="White">
+                        <RadioButton x:Name="v13" FontSize="14" GroupName="v13" Margin="0,10,0,0">Нарушение авторский прав</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v13" Margin="0,20,0,0">Нарушение закона</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v13" Margin="0,20,0,0">Нашение правил труда</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v13" Margin="0,20,0,10">Сильное нарушение</RadioButton>
+                    </StackPanel>
+                    <Button Click="next_ButtonClick" Margin="0,10,0,0" HorizontalAlignment="Center" FontSize="24">Ответить</Button>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="14">
+                <StackPanel Background="#FFB6B6B6">
+                    <StackPanel Margin="20,0,20,0" Background="White">
+                        <Label FontSize="14" Height="100">Отметьте основную массу угроз информационной безопасности</Label>
+                    </StackPanel>
+                    <StackPanel Margin="20,20,20,0" Background="White">
+                        <RadioButton FontSize="14" GroupName="v14" Margin="0,10,0,0">Блок</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v14" Margin="0,20,0,0">Вирус</RadioButton>
+                        <RadioButton x:Name="v14" FontSize="14" GroupName="v14" Margin="0,20,0,0">Троян</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v14" Margin="0,20,0,10">Червь</RadioButton>
+                    </StackPanel>
+                    <Button Click="next_ButtonClick" Margin="0,10,0,0" HorizontalAlignment="Center" FontSize="24">Ответить</Button>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="15">
+                <StackPanel Background="#FFB6B6B6">
+                    <StackPanel Margin="20,0,20,0" Background="White">
+                        <Label FontSize="14" Height="100">Основные источники угроз информационной безопасности</Label>
+                    </StackPanel>
+                    <StackPanel Margin="20,20,20,0" Background="White">
+                        <RadioButton x:Name="v15" FontSize="14" GroupName="v15" Margin="0,10,0,0">Хищенее</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v15" Margin="0,20,0,0">Блокировка</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v15" Margin="0,20,0,0">Поломка</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v15" Margin="0,20,0,10">Торможение</RadioButton>
+                    </StackPanel>
+                    <Button Click="next_ButtonClick" Margin="0,10,0,0" HorizontalAlignment="Center" FontSize="24">Ответить</Button>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="16">
+                <StackPanel Background="#FFB6B6B6">
+                    <StackPanel Margin="20,0,20,0" Background="White">
+                        <Label FontSize="14" Height="100">Определите виды информационной безопасности</Label>
+                    </StackPanel>
+                    <StackPanel Margin="20,20,20,0" Background="White">
+                        <RadioButton FontSize="14" GroupName="v16" Margin="0,10,0,0">Большая, маленькая</RadioButton>
+                        <RadioButton x:Name="v16" FontSize="14" GroupName="v16" Margin="0,20,0,0">Персональная, корпоративная, государственная</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v16" Margin="0,20,0,0">Открытая, закрытая</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v16" Margin="0,20,0,10">Быстрая, медленная</RadioButton>
+                    </StackPanel>
+                    <Button Click="next_ButtonClick" Margin="0,10,0,0" HorizontalAlignment="Center" FontSize="24">Ответить</Button>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="17">
+                <StackPanel Background="#FFB6B6B6">
+                    <StackPanel Margin="20,0,20,0" Background="White">
+                        <Label FontSize="14" Height="100">Что такое ЭЦП</Label>
+                    </StackPanel>
+                    <StackPanel Margin="20,20,20,0" Background="White">
+                        <RadioButton x:Name="v17" FontSize="14" GroupName="v17" Margin="0,10,0,0">Электронно-цифровая подпись</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v17" Margin="0,20,0,0">Электронная цп</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v17" Margin="0,20,0,0">Эквивалент цифр и почерка</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v17" Margin="0,20,0,10">Эрудит цифровых подписей</RadioButton>
+                    </StackPanel>
+                    <Button Click="next_ButtonClick" Margin="0,10,0,0" HorizontalAlignment="Center" FontSize="24">Ответить</Button>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="18">
+                <StackPanel Background="#FFB6B6B6">
+                    <StackPanel Margin="20,0,20,0" Background="White">
+                        <Label FontSize="14" Height="100">Определите наиболее распространенные угрозы информационной безопасности сети</Label>
+                    </StackPanel>
+                    <StackPanel Margin="20,20,20,0" Background="White">
+                        <RadioButton FontSize="14" GroupName="v18" Margin="0,10,0,0">Взрыв</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v18" Margin="0,20,0,0">Закрытие</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v18" Margin="0,20,0,0">Лаги</RadioButton>
+                        <RadioButton x:Name="v18" FontSize="14" GroupName="v18" Margin="0,20,0,10">Отказ(сбой) оборудования</RadioButton>
+                    </StackPanel>
+                    <Button Click="next_ButtonClick" Margin="0,10,0,0" HorizontalAlignment="Center" FontSize="24">Ответить</Button>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="19">
+                <StackPanel Background="#FFB6B6B6">
+                    <StackPanel Margin="20,0,20,0" Background="White">
+                        <Label FontSize="14" Height="100">Наиболее распространенные средства воздействия на сеть офиса</Label>
+                    </StackPanel>
+                    <StackPanel Margin="20,20,20,0" Background="White">
+                        <RadioButton FontSize="14" GroupName="v19" Margin="0,10,0,0">Вирусы черви</RadioButton>
+                        <RadioButton x:Name="v19" FontSize="14" GroupName="v19" Margin="0,20,0,0">Вирусы в сети</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v19" Margin="0,20,0,0">Вирусы на флешке</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v19" Margin="0,20,0,10">Вирусы трояны</RadioButton>
+                    </StackPanel>
+                    <Button Click="next_ButtonClick" Margin="0,10,0,0" HorizontalAlignment="Center" FontSize="24">Ответить</Button>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="20">
+                <StackPanel Background="#FFB6B6B6">
+                    <StackPanel Margin="20,0,20,0" Background="White">
+                        <Label FontSize="14" Height="100">Что такое угроза информационной системе (компьютерной сети)</Label>
+                    </StackPanel>
+                    <StackPanel Margin="20,20,20,0" Background="White">
+                        <RadioButton x:Name="v20" FontSize="14" GroupName="v20" Margin="0,10,0,0">Вероятное событие</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v20" Margin="0,20,0,0">Открытая угроза</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v20" Margin="0,20,0,0">Закрытая угроза</RadioButton>
+                        <RadioButton FontSize="14" GroupName="v20" Margin="0,20,0,10">Точное событие</RadioButton>
+                    </StackPanel>
+                    <Button Click="end_ButtonClick" Margin="0,10,0,0" HorizontalAlignment="Center" FontSize="24">Закончить попытку</Button>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </StackPanel>
+</Window>

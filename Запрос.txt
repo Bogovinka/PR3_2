@@ -1,0 +1,6 @@
+CREATE TABLE Logins(
+id int identity(0,1) primary key not null,
+Login varchar(255),
+Password varchar(255));
+
+INSERT INTO Logins VALUES ('User', 'User123'), ('Tester', 'Tester123'), ('Nikita', 'Nikita123');
